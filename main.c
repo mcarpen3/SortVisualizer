@@ -211,16 +211,8 @@ static int BubbleSortStep(Rectangle rects[], int *idxa, int *idxb)
 static int InsertionSortStep(Rectangle rects[], int *idxa, int *idxb)
 {
     static int rc = -1, a = 1, b = 0;
-    //while (a < MAG)
-    //{
-        //do 
-        //{
-            //SwapRects(rects[a], rects[b]);
-            //b--;
-        //} while (b > 0 && (rects[a].height < rects[b].height);
-        //a++;
-    //}
-    if (a == MAG - 1 && (b <= 0 || rc == 0)) 
+    
+    if (a == MAG - 1 && (b < 0 || rc == 0)) 
     {
         a = 1; b = 0; rc = -1;
         return 2;
