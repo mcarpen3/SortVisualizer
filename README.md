@@ -2,4 +2,14 @@
 - Use raylib and raygui and c sorting algorithms to sort and visualize rectangles
 - Uses Makefile and raspberry pi 3b+ with screen [XYZStudy 800x480 LCD](https://www.amazon.com/dp/B083TG7Y9B?ref=ppx_yo2ov_dt_b_fed_asin_title)
 - Requires raylib / raygui @v3 because screen isn't fully supported on newer Raspberry PI OS
-- Uses rasbian buster
+  - install debian buster onto raspberry pi
+  - Download v3 raylib/raygui at v3
+  - Install the dependencies. See Makefile for deps. bcrm libs for drawing without XWindows.
+- Example photos
+- ![Screenshot0](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145447.png?raw=true)
+- ![Screenshot1](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145455.png?raw=true)
+- ![Screenshot2](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145505.png?raw=true)
+- ![Screenshot3](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145533.png?raw=true)
+- ![Screenshot4](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145543.png?raw=true)
+- ![Screenshot5](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145625.png?raw=true)
+- ![Screenshot6](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145632.png?raw=true)
