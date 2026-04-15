@@ -6,10 +6,10 @@
   - Download v3 raylib/raygui at v3
   - Install the dependencies. See Makefile for deps. bcrm libs for drawing without XWindows.
 - Example photos
-- ![Screenshot0](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145447.png?raw=true)
-- ![Screenshot1](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145455.png?raw=true)
-- ![Screenshot2](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145505.png?raw=true)
-- ![Screenshot3](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145533.png?raw=true)
-- ![Screenshot4](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145543.png?raw=true)
-- ![Screenshot5](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145625.png?raw=true)
-- ![Screenshot6](https://github.com/mcarpen3/SortVisualizer/blob/master/scshot_20260415145632.png?raw=true)
+- ![Screenshot0](https://github.com/mcarpen3/SortVisualizer/blob/main/scshot_20260415145447.png?raw=true)
+- ![Screenshot1](https://github.com/mcarpen3/SortVisualizer/blob/main/scshot_20260415145455.png?raw=true)
+- ![Screenshot2](https://github.com/mcarpen3/SortVisualizer/blob/main/scshot_20260415145505.png?raw=true)
+- ![Screenshot3](https://github.com/mcarpen3/SortVisualizer/blob/main/scshot_20260415145533.png?raw=true)
+- ![Screenshot4](https://github.com/mcarpen3/SortVisualizer/blob/main/scshot_20260415145543.png?raw=true)
+- ![Screenshot5](https://github.com/mcarpen3/SortVisualizer/blob/main/scshot_20260415145625.png?raw=true)
+- ![Screenshot6](https://github.com/mcarpen3/SortVisualizer/blob/main/scshot_20260415145632.png?raw=true)
