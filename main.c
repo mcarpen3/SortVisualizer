@@ -48,6 +48,9 @@ int main(void)
     char title[16];
     char result[64];
     char buf[16];
+    char scshot_name[32];
+    time_t scshot;
+    struct tm *scshot_s;
     int idxTxtYPos = 0, swap = 0, sort_idx_a, sort_idx_b;
     uint32_t steps = 0;
     Vector2 titlePos, resultPos;
@@ -67,6 +70,14 @@ int main(void)
 
     while(!WindowShouldClose())
     {
+        if (IsKeyPressed(KEY_S))
+        {
+            scshot = time(NULL);
+            scshot_s = gmtime(&scshot);
+            strftime(scshot_name, sizeof(scshot_name), "scshot_%Y%m%d%H%M%S.png", scshot_s);
+            TakeScreenshot(scshot_name);
+            printf("Screenshot %s taken\n", scshot_name);
+        }
         BeginDrawing();
         ClearBackground(GetColor32(BG));
         DrawText(title, titlePos.x, titlePos.y, TITLE_TXT_H, WHITE);
