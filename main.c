@@ -34,12 +34,14 @@ static int SortRectsStep(SortType sr, Rectangle rects[], int *idxa, int *idxb);
 static int BubbleSortStep(Rectangle rects[], int *idxa, int *idxb);
 static int InsertionSortStep(Rectangle rects[], int *idxa, int *idxb);
 static Vector2 GetTitle(char *buf, SortType);
+static Vector2 GetResultText2(char *buf, double end, uint32_t steps);
 static Vector2 GetResultText(char *buf, long end, uint32_t steps);
 static Color GetRectColor(int sort, int idx, int sort_idx_a, int sort_idx_b);
 static void SwapRects(Rectangle *a, Rectangle *b);
 
 int main(void)
 {
+    double runtime = 0;
     srandom(time(NULL));
     Rectangle rects[MAG] = {0};
     GetRandHeightRects(rects, MAG);
@@ -138,13 +140,16 @@ int main(void)
         {
             if (swap != 2)
             {
+                clock_t begin_rt = clock();
                 swap = SortRectsStep(st, rects, &sort_idx_a, &sort_idx_b);
+                runtime += (double)(clock() - begin_rt) / CLOCKS_PER_SEC;
                 steps++;
             }
             else if (!done)
             {
                 end = (time(NULL) - begin);
-                resultPos = GetResultText(result, end, steps);
+                resultPos = GetResultText2(result, runtime, steps);
+                //resultPos = GetResultText(result, end, steps);
                 done = true;
             }
         }
@@ -322,3 +327,13 @@ static Vector2 GetResultText(char *buf, long end, uint32_t steps)
         WH / 2 - TITLE_TXT_H / 2
     };
 }
+
+static Vector2 GetResultText2(char *buf, double end, uint32_t steps)
+{
+    sprintf(buf, "time %.05fs, %u steps", end, steps);
+    return (Vector2) { 
+        WW / 2 - MeasureText(buf, TITLE_TXT_H) / 2,
+        WH / 2 - TITLE_TXT_H / 2
+    };
+}
+
