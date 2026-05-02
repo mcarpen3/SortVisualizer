@@ -68,7 +68,7 @@ int main(void)
 
     while(!WindowShouldClose())
     {
-                BeginDrawing();
+        BeginDrawing();
         ClearBackground(GetColor32(BG));
         DrawText(title, titlePos.x, titlePos.y, TITLE_TXT_H, WHITE);
 
@@ -337,6 +337,9 @@ static Vector2 GetTitle(char *buf, SortType st)
             break;
         case INSERT:
             sprintf(buf, "%s", "INSERTION");
+            break;
+        case QUICK:
+            sprintf(buf, "%s", "QUICK");
             break;
         default:
             sprintf(buf, "%s", "SORT VISUALIZER");
